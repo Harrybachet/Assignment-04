@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; /* 1rem = 10px (~ 0.625 rem | 1 rem = 16px) */
+}
+
+body {
+  font-size: 1.6rem; /* 16px */
+  line-height: 1.6; /* Suitable line-height */
+  letter-spacing: 0.02rem; /* Slight space between letters */
+  word-spacing: 0.05rem; /* Slight space between words */
+  font-family: 'Merriweather', serif; /* Apply the Merriweather font to the body */
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout */
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+section {
+  float: left;
+  width: 55%; /* Adjust section width */
+  padding: 2rem; /* Add padding inside sections */
+}
+
+aside {
+  float: left;
+  width: 25%; /* Adjust aside width */
+  padding: 2rem; /* Add padding to the aside */
+}
+
+footer {
+  clear: both;
+  padding: 2rem 0; /* Add padding to the footer */
+  text-align: center; /* Center footer content */
+}
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif; /* Apply Roboto Slab to headings */
+}
+
+h1 {
+  font-size: 4rem; /* Adjust font size */
+  font-weight: 700; /* Bold */
+  text-align: center; /* Center the text */
+  letter-spacing: 0.1rem; /* Adjust letter-spacing for better readability */
+  margin-top: 2rem; /* Add spacing above */
+}
+
+h2 {
+  font-size: 2.4rem; /* 24px */
+  letter-spacing: 0.08rem; /* Space between letters */
+}
+
+h3 {
+  font-size: 2rem; /* 20px */
+  letter-spacing: 0.06rem; /* Space between letters */
+}
+
+/* Paragraphs and list items */
+p, li {
+  font-size: 1.6rem; /* 16px */
+  letter-spacing: 0.02rem; /* Same letter-spacing for consistency */
+  word-spacing: 0.05rem; /* Same word-spacing for consistency */
+  line-height: 1.6; /* Match the line-height of paragraphs and lists */
+}
+
+/* Indent the first paragraph after each heading in the section */
+section p:first-of-type {
+  text-indent: 1.25rem; /* Indent first paragraph */
+}
+
+/* Indent the paragraph starting with "At St. Huxley's..." */
+section p:nth-of-type(3) {
+  text-indent: 1.25rem; /* Indent the paragraph about education and emotional intelligence */
+}
+
+/* Links Styling */
+a {
+  font-size: 1.4rem; /* Slightly smaller */
+  font-weight: 400; /* Regular weight (not bold) */
+  color: #a66; /* Link color matches header and footer */
+  text-decoration: underline; /* Underline by default */
+}
+
+a:visited {
+  color: #7b4444; /* Darker color for visited links */
+}
+
+a:hover, a:focus {
+  color: #a66; /* Keep same color on hover/focus */
+  text-decoration: none; /* Remove underline on hover/focus */
+  outline: none; /* Remove focus outline */
+}
+
+a:active {
+  color: #fff; /* White text when active */
+  background-color: #a66; /* Highlight background color on active */
+  padding: 2px 4px; /* Padding for emphasis */
+}
+
+/* External link icon */
+a[href^="http"]:after {
+  content: ''; /* Remove content with direct image */
+  display: inline-block;
+  margin-left: 0.3rem; /* Space between text and icon */
+  vertical-align: middle; /* Align icon with text */
+  width: 12px; /* Adjust icon width */
+  height: 12px; /* Adjust icon height */
+  background-image: url('external-link-52.png'); /* Use background image */
+  background-size: contain; /* Scale the image to fit */
+  background-repeat: no-repeat;
+}
+
+/* Special icon for specific terms */
+.examination:after,
+.jobs:after,
+.careers:after,
+.too-emotional:after {
+  content: ''; /* Remove content with direct image */
+  display: inline-block;
+  margin-left: 0.3rem; /* Space between text and icon */
+  vertical-align: middle; /* Align icon with text */
+  width: 12px; /* Adjust icon width */
+  height: 12px; /* Adjust icon height */
+  background-image: url('external-link-52.png'); /* Use background image */
+  background-size: contain; /* Scale the image to fit */
+  background-repeat: no-repeat;
+}
+
+/* Lists styling */
+ul, ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem; /* Space for bullets/numbers */
+  list-style-type: square; /* Use square bullets */
+}
+
+li {
+  line-height: 1.6; /* Match paragraph line-height */
+}
+
+/* Navigation menu styling */
+nav {
+  width: 20%; /* Fixed width for the nav */
+  float: left; /* Align navigation to the left */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 1.5rem; /* Add spacing between items */
+}
+
+nav a {
+  font-size: 1.6rem; /* Font size for navigation links */
+  font-weight: 400; /* Regular weight for links */
+  display: block; /* Block-level link */
+  padding: 1.5rem; /* Increase padding inside the link to make it taller */
+  border: 1px solid #a66; /* Border for each link */
+  text-align: center; /* Center the link text */
+  text-decoration: none; /* Remove underline */
+  background-color: #ffffff; /* White background */
+  color: #a66; /* Link color */
+  border-radius: 0; /* No border-radius for a rectangular shape */
+  transition: background-color 0.3s; /* Smooth background-color transition */
+}
+
+nav a:hover {
+  background-color: #f2e1e1; /* Light background on hover */
+}
+
+/* Footer text */
+footer {
+  font-size: 1.4rem; /* Slightly smaller font for the footer */
+  text-align: center; /* Center footer text */
+}
